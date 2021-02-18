@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\bin\Debug\Practicetwo.exe.config
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\bin\Debug\Practicetwo.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\bin\Debug\Practicetwo.pdb
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\obj\Debug\Practicetwo.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\obj\Debug\Practicetwo.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\obj\Debug\Practicetwo.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Practicetwo\obj\Debug\Practicetwo.pdb
