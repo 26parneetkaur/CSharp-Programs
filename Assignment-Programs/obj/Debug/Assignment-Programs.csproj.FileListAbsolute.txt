@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\bin\Debug\Assignment-Programs.exe.config
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\bin\Debug\Assignment-Programs.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\bin\Debug\Assignment-Programs.pdb
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\obj\Debug\Assignment-Programs.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\obj\Debug\Assignment-Programs.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\obj\Debug\Assignment-Programs.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Programs\obj\Debug\Assignment-Programs.pdb

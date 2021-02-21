@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\bin\Debug\Delegates.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\bin\Debug\Delegates.pdb
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\obj\Debug\Delegates.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\obj\Debug\Delegates.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Delegates\obj\Debug\Delegates.pdb

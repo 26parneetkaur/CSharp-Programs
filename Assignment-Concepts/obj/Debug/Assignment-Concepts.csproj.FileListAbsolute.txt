@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\bin\Debug\Assignment-Concepts.exe.config
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\bin\Debug\Assignment-Concepts.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\bin\Debug\Assignment-Concepts.pdb
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\obj\Debug\Assignment-Concepts.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\obj\Debug\Assignment-Concepts.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\obj\Debug\Assignment-Concepts.exe
+C:\Users\Lenovo\source\repos\Practicetwo\Assignment-Concepts\obj\Debug\Assignment-Concepts.pdb
