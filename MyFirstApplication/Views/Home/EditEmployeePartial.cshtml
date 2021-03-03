@@ -1,0 +1,94 @@
+﻿@model EmployeeViewModel
+<div>
+    <button><a class="nav-link text-link" asp-area="" asp-controller="Home" asp-action="EmployeeDetails">Back</a></button>
+</div>
+@{
+    var items = new List<SelectListItem>
+    {
+        new SelectListItem(){Text="Select",Value="0"},
+        new SelectListItem(){Text="Male",Value="1"},
+        new SelectListItem(){Text="Female",Value="2"},
+        new SelectListItem(){Text="Transgender",Value="3"},
+    };
+    List<SelectListItem> country = new List<SelectListItem>();
+    {
+        country.Add(new SelectListItem { Text = "India", Value = "1" });
+        country.Add(new SelectListItem { Text = "Bangladesh", Value = "2" });
+        country.Add(new SelectListItem { Text = "nepal", Value = "3" });
+        country.Add(new SelectListItem { Text = "USA", Value = "4" });
+    };
+}
+@if (Model != null)
+{
+    @using (Html.BeginForm("EditEmployee", "Home", FormMethod.Post,new { id="EmployeeForm"}))
+    {
+
+
+        <div class="s1">
+            <div>Name</div>
+            @Html.TextBoxFor(m => m.Name)
+            @Html.ValidationMessageFor(m => m.Name, "", new { id = "Name_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Age</div>
+            @Html.TextBoxFor(m => m.Age, new { onchange = "HandleChangeAge()" })
+            @Html.ValidationMessageFor(m => m.Age, "", new { id = "Age_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Salary</div>
+            @Html.TextBoxFor(m => m.Salary)
+            @Html.ValidationMessageFor(m => m.Salary, "", new { id = "Salary_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Designation</div>
+            @Html.TextBoxFor(m => m.Designation)
+            @Html.ValidationMessageFor(m => m.Designation, "", new { id = "Designation_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Type Of Gender</div>
+            @Html.DropDownListFor(m => m.TypeGender,items,"select gender")
+            @Html.ValidationMessageFor(m => m.isActive, "", new { id = "Gender_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            @Html.LabelFor(m => m.Gender)
+            <div class="col-md-10">
+                Male:@Html.RadioButtonFor(m => m.Gender, 1)
+                Female:@Html.RadioButtonFor(m => m.Gender, 2)
+            </div>
+            @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Password</div>
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password, "", new { id = "Password_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Email</div>
+            @Html.TextBoxFor(m => m.Email ,new {  onkeyup = "HandleKeyUp()" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { id = "Email_ErrorMessage", @class = "text-danger" })
+        </div>
+        <div class="s1">
+            <div>Select Country</div>
+            @Html.ListBoxFor(m => m.Country,country,new { style="width:200px"})
+            @Html.ValidationMessageFor(m => m.Country, "", new { id = "Country_ErrorMessage", @class = "text-danger" })
+        </div>
+        <br />
+        <div>
+            <input type="button" onclick="submitForm()" value="Submit" />
+        </div>
+    }
+}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="~/js/JavaScriptCode.js"></script>
+<script>
+    /*function submitForm() {
+        var data = {
+            Id: $("#hdnId").val(),
+            Name: $("#Name").val(),
+            Age: $("#Age").val(),
+            Salary: $("#Salary").val(),
+            Designation: $("#Designation").val(),
+        }
+
+    }*/
+</script>

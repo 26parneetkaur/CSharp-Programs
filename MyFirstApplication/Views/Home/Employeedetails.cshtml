@@ -1,0 +1,63 @@
+﻿@model List<EmployeeViewModel>
+
+@{
+    ViewData["Title"] = "EmployeeDetails";
+
+}
+<style>
+    table{
+        width:100%;
+        background:silver;
+        border:1px solid black;
+    }
+</style>
+
+<h1>Employee Details</h1>
+<br />
+<div>
+    <button><a class="nav-link text-link" asp-area="" asp-controller="Home" asp-action="EditEmployee">Add New</a></button>
+</div>
+<br />
+<div>
+    <table>
+        <thead>
+            <tr style="font-weight:bold;">
+                <td>Id</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Salary</td>
+                <td>Designation</td>
+                <td>Edit</td>
+            </tr>
+        </thead>
+        
+        <tbody>
+            @foreach (EmployeeViewModel i in Model)
+            {
+            <tr>
+                <td style="width:10%;">@i.Id</td>
+                <td style="width:30%;">@i.Name</td>
+                <!--<td><a class="nav-link text-link" asp-area="" asp-controller="Home" asp-action="EditEmployee" asp-route-id="@i.Id">@i.Name</a></td>-->
+                <td style="width:20%;">@i.Age</td>
+                <td style="width:20%;">@i.Salary</td>
+                <td style="width:20%;">@i.Designation</td>
+                <!--<td style="width:20%;cursor:pointer;" onclick="EditEmployeeDetails(@i.Id)">@i.Edit</td>-->
+            <td><a class="nav-link text-link" asp-area="" asp-controller="Home" asp-action="EditEmployee" asp-route-id="@i.Id">@i.Edit</a></td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+<br />
+<br />
+<br />
+<div id="editdetails">
+
+</div>
+
+<script>
+    function EditEmployeeDetails(id) {
+        $("#editdetails").load('/Home/EditEmployee/' + id);
+    }
+</script>
