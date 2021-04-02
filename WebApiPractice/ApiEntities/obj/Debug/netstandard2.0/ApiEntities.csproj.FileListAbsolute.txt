@@ -1,0 +1,9 @@
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\bin\Debug\netstandard2.0\ApiEntities.deps.json
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\bin\Debug\netstandard2.0\ApiEntities.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\bin\Debug\netstandard2.0\ApiEntities.pdb
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiEntities\obj\Debug\netstandard2.0\ApiEntities.pdb

@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiBusinessLayer.deps.json
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiBusinessLayer.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiBusinessLayer.pdb
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiDataAccess.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiEntities.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiDataAccess.pdb
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\bin\Debug\netstandard2.0\ApiEntities.pdb
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.dll
+C:\Users\Lenovo\source\repos\WebApiPractice\ApiBusinessLayer\obj\Debug\netstandard2.0\ApiBusinessLayer.pdb
