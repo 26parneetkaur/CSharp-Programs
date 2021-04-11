@@ -1,0 +1,115 @@
+﻿@model SqlEntities.Entities.Student
+
+@{
+    ViewData["Title"] = "Students Data";
+}
+@{ var tempList = new List<SelectListItem>();
+                int index = 1;
+
+
+                foreach (var item in ViewBag.collegeNames)
+                {
+                    tempList.Add(new SelectListItem() { Text = item, Value = index.ToString() });
+                    index++;
+                }
+                var items = tempList;
+
+
+                var tempList2 = new List<SelectListItem>();
+                int index2 = 1;
+
+
+                foreach (var item in ViewBag.teacherNames)
+                {
+                    tempList2.Add(new SelectListItem() { Text = item, Value = index2.ToString() });
+                    index2++;
+                }
+                var items2 = tempList2; 
+    
+   }
+<button><a class="nav-link text-link" asp-area="" asp-controller="Home" asp-action="FetchStudents">Back To List</a></button>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<h1>Update List</h1>
+<hr />
+@using (Html.BeginForm("UpdateStudentsList", "Home", FormMethod.Post))
+{
+<div class="container">
+    <div class="form-group">
+        @Html.HiddenFor(x => x.StudentId, new { @class = "form-control" })
+        <label>First-Name</label>
+        @Html.ValidationMessageFor(x => x.StudentFirstName, "", new { @class = "error" })
+        @Html.TextBoxFor(x => x.StudentFirstName, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.HiddenFor(x => x.StudentId, new { @class = "form-control" })
+        <label>Last-Name</label>
+        @Html.ValidationMessageFor(x => x.StudentLastName, "", new { @class = "error" })
+        @Html.TextBoxFor(x => x.StudentLastName, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Student-Gender</label><br />
+        @Html.ValidationMessageFor(x => x.StudentGender, "", new { @class = "error" })
+        Male:@Html.RadioButtonFor(x => x.StudentGender, "Male")
+        Female:@Html.RadioButtonFor(x => x.StudentGender, "Female")
+    </div>
+    <div class="form-group">
+        <label>Student Date-Of-Birth</label>
+        @Html.ValidationMessageFor(x => x.StudentDob, "", new { @class = "error" })
+        @Html.EditorFor(x => x.StudentDob, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Student Age</label>
+        @Html.ValidationMessageFor(x => x.StudentAge, "", new { @class = "error" })
+        @Html.TextBoxFor(x => x.StudentAge, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>State</label>
+        @Html.ValidationMessageFor(x => x.State, "", new { @class = "error" })
+        @Html.TextBoxFor(x => x.State, new { @class = "form-control" })
+    </div>
+
+    @*<div class="form-group">
+            <label class="control-label">College Name</label>
+            <select id="CollegeId" name="CollegeId" class="dropdown">
+                @foreach (var item in ViewBag.College)
+                {
+                    <option class="dropdown-item" value="@item.CollegeId">@item.CollegeName</option>
+                }
+            </select>
+            <span asp-validation-for="CollegeId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Teacher Name</label>
+            <select id="CollegeId" name="TeacherId" class="dropdown">
+                @foreach (var item in ViewBag.Teacher)
+                {
+                    <option class="dropdown-item" value="@item.TeacherId">@item.TeacherName</option>
+                }
+            </select>
+            <span asp-validation-for="TeacherId" class="text-danger"></span>
+        </div>*@
+    <div class="form-group">
+        @Html.LabelFor(model => model.TeacherId)
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.TeacherId, items2, "Select Designation", htmlAttributes: new { @class = "makewide" })
+            @Html.ValidationMessageFor(model => model.TeacherId, "", new { id = "Desig_ErrorMessage", @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CollegeId)
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.CollegeId, items, "Select Designation", htmlAttributes: new { @class = "makewide" })
+            @Html.ValidationMessageFor(model => model.CollegeId, "", new { id = "Desig_ErrorMessage", @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</div>
+}

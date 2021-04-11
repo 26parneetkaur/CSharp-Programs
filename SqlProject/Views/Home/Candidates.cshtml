@@ -1,0 +1,102 @@
+﻿@model IEnumerable<SqlEntities.Entities.Student>
+
+@{
+    ViewData["Title"] = "Candidates";
+}
+
+<h1>Candidates</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentDob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CollegeId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentFirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentLastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentGender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentDob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CollegeId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @if(ViewBag.PageNo>1)
+            {
+                <li class="page-item">@Html.ActionLink("Previous","Candidates",new { id=ViewBag.PageNo-1},new {@class="page-link" })</li>
+            }
+            @for(int i=1;i<=ViewBag.TotalPages;i++)
+            {
+                <li class="page-item">@Html.ActionLink(""+i, "Candidates", new  {id=i },new  { @class="page-link" })</li>
+            }
+            @if(ViewBag.PageNo!=ViewBag.TotalPages)
+            {
+                <li class="page-item">@Html.ActionLink("Next", "Candidates", new { id = ViewBag.PageNo + 1 }, new { @class = "page-link" })</li>
+            }
+        </ul>
+    </nav>

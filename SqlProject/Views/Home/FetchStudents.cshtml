@@ -1,0 +1,132 @@
+﻿@*@model IEnumerable<SqlEntities.Entities.Student>*@
+@*@model X.PagedList.IPagedList<SqlEntities.Entities.Student>*@
+@*@model X.PagedList.IPagedList<SqlEntities.CustomEntities.StudentInsertUpdateModel>*@
+@model X.PagedList.IPagedList<SqlEntities.CustomEntities.StudentInsertUpdateModel>
+@*@using PagedList.Mvc;*@
+@using X.PagedList.Mvc.Core;
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+@*@model SqlEntities.Entities.Student*@
+@{
+    ViewData["Title"] = "FetchStudents";
+}
+
+<p>
+    <a asp-action="Students">Create New</a>
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Search Name: @Html.TextBox("Search_Data", ViewBag.FilterValue as string)
+        <input type="submit" value="Find" />
+    </p>
+}
+
+<h1>FetchStudents</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+
+                StudentId
+            </th>
+
+            <th>
+                @Html.ActionLink("FirstName", "FetchStudents", new { Sorting_Order = ViewBag.SortingName })
+            </th>
+            <th>
+
+                StudentLastName
+            </th>
+            <th>
+
+                StudentGender
+            </th>
+            <th>
+                StudentDob
+
+            </th>
+
+            <th>
+                @Html.ActionLink("StudentAge", "FetchStudents", new { Sorting_Order = ViewBag.SortingAge })
+            </th>
+            <th>
+
+                State
+            </th>
+
+            <th>
+                TeacherName
+            </th>
+            <th>
+                CollegeName
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentDob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.TeacherName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CollegeName)
+        </td>
+            <td>
+                @Html.ActionLink("Edit", "UpdateStudents", new { id = item.StudentId }) |
+                @Html.ActionLink("Details", "ShowStudentDetails", new { id = item.StudentId }) |
+                @Html.ActionLink("Delete", "DeleteStudent", new { id = item.StudentId })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, Page_No => Url.Action("FetchStudents",
+new { Page_No, Sorting_Order = ViewBag.CurrentSortOrder, Filter_Value = ViewBag.FilterValue }))
+
+@*<nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @if(ViewBag.PageNo>1)
+            {
+                <li class="page-item">@Html.ActionLink("Previous","Candidates",new { id=ViewBag.PageNo-1},new {@class="page-link" })</li>
+            }
+            @for(int i=1;i<=ViewBag.TotalPages;i++)
+            {
+                <li class="page-item">@Html.ActionLink(""+i, "Candidates", new  {id=i },new  { @class="page-link" })</li>
+            }
+            @if(ViewBag.PageNo!=ViewBag.TotalPages)
+            {
+                <li class="page-item">@Html.ActionLink("Next", "Candidates", new { id = ViewBag.PageNo + 1 }, new { @class = "page-link" })</li>
+            }
+        </ul>
+    </nav>*@
