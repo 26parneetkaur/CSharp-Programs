@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookBusinessLayer.deps.json
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookBusinessLayer.dll
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookBusinessLayer.pdb
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookDataAccess.dll
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookEntities.dll
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookDataAccess.pdb
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\bin\Debug\netstandard2.0\BookEntities.pdb
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.dll
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookBusinessLayer\obj\Debug\netstandard2.0\BookBusinessLayer.pdb

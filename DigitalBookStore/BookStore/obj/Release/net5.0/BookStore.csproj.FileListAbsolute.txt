@@ -1,0 +1,6 @@
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\DigitalBookStore\BookStore\obj\Release\net5.0\BookStore.MvcApplicationPartsAssemblyInfo.cache
