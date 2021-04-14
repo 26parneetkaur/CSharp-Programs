@@ -1,0 +1,35 @@
+<p>visitor-panel works!</p>
+
+<nav class="navbar navbar-dark bg-dark">
+  <a href="" class="navbar-brand text-white">Visitor Panel</a>
+  <button type="button" class="btn btn-info"><a class="nav-link" routerLink="/home">Back</a></button>  
+</nav>
+<br>
+<h3>Books..</h3>
+<hr>
+<table class="table" >  
+    <tr ngclass="btn-primary">  
+      <th class="tbl2">Book Name</th>  
+      <th class="tbl2">Author Name</th>  
+      <th class="tbl2">Publication year</th>  
+      <th class="tbl2">Price</th>  
+      <th class="tbl2">Book Description</th> 
+      <th class="tbl2">Details</th> 
+      <th class="tbl2">Add Comments</th>   
+      
+    </tr>  
+    <tr *ngFor="let book of allBooks">  
+      <td class="tbl2">{{book.BookName}}</td>  
+      <td class="tbl2">{{book.AuthorName}}</td>  
+      <td class="tbl2">{{book.PublicationYear}}</td>  
+      <td class="tbl2">{{book.Price}}</td>  
+      <td class="tbl2">{{book.BookDescription}}</td> 
+      <td class="tbl2"><button [routerLink]="['/addcomment/'+book.BookId]" >Details</button></td>
+      <td class="tbl2"><button >Add Comments</button></td>
+      
+      
+      
+    </tr>  
+
+  </table>  
+

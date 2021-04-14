@@ -1,0 +1,27 @@
+<p>addbook works!</p>
+
+<button type="button" class="btn btn-info"><a class="nav-link" routerLink="/adminpanel">Back</a></button>  
+<form [formGroup]="booksForm" (submit)="onFormSubmit()">
+    <div>
+        <label>BookName</label> <br>
+        <input formControlName="BookName"  placeholder="Enter Book Name">
+      </div>
+      <div>
+        <label>AuthorName</label> <br>
+         <input formControlName="AuthorName"  placeholder="Enter Author Name">
+      </div>
+      <div>
+        <label>PublicationYear</label> <br>
+         <input formControlName="PublicationYear"  placeholder="Enter Publication Year">
+      </div>
+      <div>
+        <label>BookDescription</label> <br>
+         <input formControlName="BookDescription"  placeholder="Enter Book Description">
+      </div>
+      <div>
+        <label>Price</label> <br>
+         <input formControlName="Price"  placeholder="Enter Price">
+      </div><br>
+      <button type="submit">Submit</button>
+      <button class="btn1" type="reset"  (click)="resetForm()">Reset</button>  <br>
+</form>
